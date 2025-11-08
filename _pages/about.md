@@ -35,7 +35,7 @@ My research interests primarily focus on **machine learning** and **computer vis
 ### 📝 Publications
 
 -   **ReasonNav: Human-Inspired Global Map Reasoning for Zero-Shot Embodied Navigation**
-    -   **{Yuzhuo Ao\* }**, Anbang Wang\*, Yu-Wing Tai, Chi-Keung Tang
+    -   **Yuzhuo Ao\* **, Anbang Wang\*, Yu-Wing Tai, Chi-Keung Tang
     -   *Under review*
     -   \* *Equal contribution.*
 
