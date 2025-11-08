@@ -35,53 +35,8 @@ My research interests primarily focus on **machine learning** and **computer vis
 ### 📝 Publications
 
 -   **ReasonNav: Human-Inspired Global Map Reasoning for Zero-Shot Embodied Navigation**
-    -   Yuzhuo Ao\*, Anbang Wang\*, Yu-Wing Tai, Chi-Keung Tang
+    -   **{Yuzhuo Ao\* }**, Anbang Wang\*, Yu-Wing Tai, Chi-Keung Tang
     -   *Under review*
     -   \* *Equal contribution.*
 
--   **XToM: Exploring the Multilingual Theory of Mind for Large Language Models**
-    -   Chunkit Chan, Yauwai Yim, Hongchuan Zeng, ..., **Yuzhuo Ao**, ..., Yangqiu Song
-    -   *Under review*
 
----
-
-### 💻 Projects
-
--   **ReasonNav: Human-Inspired Global Map Reasoning for Zero-Shot Embodied Navigation**
-    -   *Advised by Prof. Chi-Keung Tang & Prof. Yu-Wing Tai*
-    -   Developed ReasonNav, a framework that leverages MLLMs for global reasoning and a deterministic planner for local navigation.
-    -   Enabled unified, zero-shot navigation across diverse tasks without task-specific fine-tuning.
-    -   Demonstrated superior performance over existing methods in efficiency and reliability.
-
--   **XToM: Exploring the Multilingual Theory of Mind for Large Language Models**
-    -   *Advised by Prof. Yangqiu Song*
-    -   Contributed to a new multilingual benchmark (XToM) for evaluating Theory of Mind (ToM) in LLMs.
-    -   Devised an automatic data validation pipeline to ensure the quality and robustness of the benchmark data.
-
----
-
-### 🏆 Honors and Awards
-
--   University's Scholarship Scheme for Continuing Undergraduate Students (2024 Fall)
--   S. S. Chern Class Scholarship (for top math students in HKUST) (2024 Spring)
--   Dean's List (2025 Spring, 2024 Spring, 2023 Fall)
--   University Admission Scholarship (2023 Summer)
-
----
-
-### 🛠️ Skills
-
--   **Programming Languages:**
-    -   Python (Proficient)
-    -   C/C++ (Proficient)
-    -   R (Familiar)
--   **Languages:**
-    -   Mandarin (Native)
-    -   English (Proficient - IELTS 7.0)
-    -   Cantonese (Beginner)
-
----
-
-### 🎬 Extracurricular Activities
-
--   **Executive Committee Member**, 32nd Executive Committee of Film Society, HKUSTSU (2023/09 - 2024/09)
