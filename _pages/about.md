@@ -7,8 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-I am Ao Yuzhuo, an undergraduate student at The Hong Kong University of Science and Technology (HKUST), where I am pursuing a BSc in Data Science and Technology with an Extended Major in AI.
+I am a third-year BSc student in [Data Science and Technology +AI](https://dsct.hkust.edu.hk/) at [The Hong Kong University of Science and Technology (HKUST)](https://hkust.edu.hk/). My research interests are centered on machine learning and computer vision, with a particular focus on creating unified models for 2D and 3D data to enable a human-like understanding of the real world. My most recent work has been concentrated on 3D vision. I have been fortunate to work with [Prof. Chi-Keung Tang](https://cse.hkust.edu.hk/~cktang/bio.html) and [Prof. Yu-Wing Tai ](https://yuwingtai.github.io/)on computer vision.
 
-My research interests primarily focus on machine learning and computer vision. I am particularly interested in the unified modeling of 2D and 3D data to achieve a human-like understanding of the real world. My recent focus has been centered on 3D vision.
+### Recent News
+*   **2025/06**: Summer Exchange Program at [Nanyang Technological University(NTU)](https://www.ntu.edu.sg/).
+*   **2025 Fall**: Looking forward to the exchange program at [École Polytechnique Fédérale de Lausanne (EPFL)](https://www.epfl.ch/en/)
 
-This past summer, I attended a summer exchange program at Nanyang Technological University. I am now looking forward to exchanging to EPFL for the spring semester in 2026.```
