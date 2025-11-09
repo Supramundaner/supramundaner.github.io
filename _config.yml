@@ -25,12 +25,12 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "AO Yuzhuo"
-  pronouns         : he/him"  
-  bio              : "UG@HKUST"
+  pronouns         : "he/him"
+  bio              : "Bsc in DSCT, HKUST"
   location         : "HKSAR, China"
-  employer         : "Red Brick University"
-  uri              : # URL
-  email            : "none@example.org" 
+  employer         : "The Hong Kong University of Science and Technology"
+  uri              : https://supramundaner.github.io/
+  email            : "yaoaa@connect.ust.hk" 
 
   # Academic websites
   academia         : # URL
