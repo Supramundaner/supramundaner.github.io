@@ -12,4 +12,5 @@ redirect_from:
 <iframe src="../assets/CV.pdf" width="100%" height="800px">
 </iframe>
 
-[Download CV PDF](../assets/CV.pdf)
+<span class="en-content">[Download CV PDF](../assets/CV.pdf)</span>
+<span class="cn-content">[下载 CV PDF](../assets/CV.pdf)</span>

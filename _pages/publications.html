@@ -5,32 +5,28 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<ul>
+  <li>
+    <div style="display: flex; justify-content: space-between;">
+      <strong>ReasonNav: Human-Inspired Global Map Reasoning for Zero-Shot Embodied Navigation</strong>
+      <em><small>Under review</small></em>
+    </div>
+    <div><small><strong>Yuzhuo Ao*</strong>, Anbang Wang*, Yu-Wing Tai, Chi-Keung Tang</small></div>
+    <div><small><em>* Equal contribution.</em></small></div>
+  </li>
+  <br>
+  <li>
+    <div style="display: flex; justify-content: space-between;">
+      <strong>XToM: Exploring the Multilingual Theory of Mind for Large Language Models</strong>
+      <em><small>Under review</small></em>
+    </div>
+    <div><small>Chunkit Chan, Yauwai Yim, Hongchuan Zeng, Zhiying Zou, Xinyuan Cheng, Zhifan Sun, Zheye Deng, Kawai Chung, <strong>Yuzhuo Ao</strong>, Yixiang Fan, Cheng Jiayang, Ercong Nie, Ginny Y. Wong, Helmut Schmid, Hinrich Schütze, Simon See, Yangqiu Song</small></div>
+  </li>
+</ul>
+
+
 
 
 
