@@ -6,12 +6,9 @@ document.addEventListener("DOMContentLoaded", function() {
   // Initialize state
   if (lang === "cn") {
     body.classList.add("lang-cn");
-    if(toggleButton) toggleButton.innerText = "EN"; // Button shows what you switch TO, or current? Usually switch TO. Let's say "EN" means "Switch to English". Or just show current state "中文". Let's stick to "CN/EN" or just "CN" when in EN mode.
-    // Let's make it simple: Button text shows the OTHER language.
-    // If current is CN, button says "EN".
-    // If current is EN, button says "CN".
+    if(toggleButton) toggleButton.innerText = "EN";
   } else {
-    if(toggleButton) toggleButton.innerText = "CN";
+    if(toggleButton) toggleButton.innerText = "中文";
   }
 
   if (toggleButton) {
@@ -20,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
       if (body.classList.contains("lang-cn")) {
         body.classList.remove("lang-cn");
         localStorage.setItem("lang", "en");
-        toggleButton.innerText = "CN";
+        toggleButton.innerText = "中文";
       } else {
         body.classList.add("lang-cn");
         localStorage.setItem("lang", "cn");

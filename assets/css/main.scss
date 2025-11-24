@@ -45,4 +45,8 @@
 /* Language Toggle Styles */
 .cn-content { display: none; }
 .lang-cn .en-content { display: none; }
-.lang-cn .cn-content { display: block; }
+.lang-cn .cn-content { display: inline; }
+div.cn-content, div.en-content { display: block; } /* Keep block for div containers */
+.lang-cn div.cn-content { display: block; }
+.lang-cn div.en-content { display: none; }
+div.cn-content { display: none; }
