@@ -24,11 +24,11 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "AO Yuzhuo"
+  name             : "<span class='en-content'>AO Yuzhuo</span><span class='cn-content'>敖宇卓</span>"
   pronouns         : "he/him"
-  bio              : "Bsc in DSCT, HKUST"
-  location         : "HKSAR, China"
-  employer         : "The Hong Kong University of Science and Technology"
+  bio              : "<span class='en-content'>Bsc in DSCT, HKUST</span><span class='cn-content'>香港科技大学 数据科学与技术本科</span>"
+  location         : "<span class='en-content'>HKSAR, China</span><span class='cn-content'>中国香港</span>"
+  employer         : "<span class='en-content'>The Hong Kong University of Science and Technology</span><span class='cn-content'>香港科技大学</span>"
   uri              : https://supramundaner.github.io/
   email            : "yaoaa@connect.ust.hk" 
 
@@ -63,7 +63,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "yuzhuo-ao-911a39294"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
