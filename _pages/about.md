@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About Me"
+title: "<span class='en-content'>About Me</span><span class='cn-content'>关于我...</span>"
 author_profile: true
 redirect_from: 
   - /about/
