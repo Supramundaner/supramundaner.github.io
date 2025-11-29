@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "<span class='en-content'>About Me</span><span class='cn-content'>关于我...</span>"
+title: "<span class='en-content'>About Me</span><span class='cn-content'>关于我</span>"
 author_profile: true
 redirect_from: 
   - /about/
@@ -9,7 +9,7 @@ redirect_from:
 
 <div class="en-content" markdown="1">
 
-Hi there! Thanks for visiting my homepage 😊🥂! I am a third-year BSc student in [Data Science and Technology +AI](https://dsct.hkust.edu.hk/) at [The Hong Kong University of Science and Technology (HKUST)](https://hkust.edu.hk/). 
+Hi there! Welcome to my homepage 😊🥂! I am a third-year BSc student in [Data Science and Technology +AI](https://dsct.hkust.edu.hk/) at [The Hong Kong University of Science and Technology (HKUST)](https://hkust.edu.hk/). 
 
 My research interests are centered on machine learning and computer vision, with a particular focus on unified modeling of 2D and 3D and human-like understanding of the real world. My most recent work has been concentrated on 3D vision. I have been fortunate to work with [Prof. Chi-Keung Tang](https://cse.hkust.edu.hk/~cktang/bio.html) and [Prof. Yu-Wing Tai ](https://yuwingtai.github.io/)on computer vision.
 
@@ -21,7 +21,7 @@ Feel free to reach out for potential collaborations or discussions!🤓
 
 欢迎光临我的主页😊🥂！ 我是[香港科技大学 (HKUST)](https://hkust.edu.hk/) [数据科学与技术 +AI](https://dsct.hkust.edu.hk/) 专业的大三本科生。
 
-我的研究兴趣主要集中在机器学习和计算机视觉，尤其是统一的 2D 和 3D 建模以及类人感知。我最近的工作主要集中于 3D 视觉。我有幸在 [Prof. Chi-Keung Tang](https://cse.hkust.edu.hk/~cktang/bio.html) 和 [Prof. Yu-Wing Tai ](https://yuwingtai.github.io/) 的指导下进行计算机视觉方面的研究。
+我的研究兴趣主要集中在机器学习和计算机视觉，尤其是2D和3D视觉的统一建模以及对真实物理世界的类人感知。我最近的工作主要集中于 3D 视觉。我有幸在 [Prof. Chi-Keung Tang](https://cse.hkust.edu.hk/~cktang/bio.html) 和 [Prof. Yu-Wing Tai ](https://yuwingtai.github.io/) 的指导下进行计算机视觉方面的研究。
 
 如果有任何想法，欢迎通过email联系！🤓
 </div>
