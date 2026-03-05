@@ -87,16 +87,22 @@
         /* ========== Hero Section ========== */
         .hero {
             position: relative;
-            height: 100vh; min-height: 600px;
+            height: 55vh; min-height: 380px;
             overflow: hidden;
             display: flex; align-items: center; justify-content: center;
         }
         .hero-bg {
-            position: absolute; top: -15%; left: 0;
-            width: 100%; height: 130%;
-            background: url('assets/background.jpeg') center / cover no-repeat;
+            position: absolute; top: -20%; left: 0;
+            width: 100%; height: 140%;
             will-change: transform;
             z-index: 0;
+            overflow: hidden;
+        }
+        .hero-bg img {
+            position: absolute; top: 0;
+            height: 100%;
+            width: auto; min-width: 100%;
+            object-fit: cover;
         }
         .hero-overlay {
             position: absolute; inset: 0;
@@ -114,7 +120,7 @@
             max-width: 880px; width: 90%;
         }
         .profile-photo {
-            width: 255px; height: 320px;
+            width: 200px; height: 250px;
             object-fit: cover;
             border-radius: 10px;
             box-shadow: 0 8px 36px rgba(0, 0, 0, 0.35);
@@ -127,14 +133,14 @@
             -webkit-backdrop-filter: blur(14px);
             border: 1px solid rgba(255, 255, 255, 0.10);
             border-radius: 16px;
-            padding: 2.4rem 2.8rem 2.4rem 3.8rem;
-            margin-left: -32px;
+            padding: 1.8rem 2.4rem 1.8rem 3.4rem;
+            margin-left: -28px;
             position: relative; z-index: 1;
         }
         .hero-card h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 2.5rem; font-weight: 700;
-            color: #fff; margin-bottom: 0.6rem;
+            font-size: 2.1rem; font-weight: 700;
+            color: #fff; margin-bottom: 0.4rem;
             letter-spacing: -0.01em;
         }
         .hero-card .hero-subtitle {
@@ -232,13 +238,13 @@
             box-shadow: 0 12px 32px rgba(0, 0, 0, 0.10);
         }
         .pub-cover {
-            width: 220px; min-height: 145px;
+            width: 260px; min-height: 145px;
             border-radius: 10px; overflow: hidden;
             flex-shrink: 0;
         }
         .pub-cover img {
-            width: 100%; height: 100%;
-            object-fit: cover; display: block;
+            width: 100%; height: auto;
+            object-fit: contain; display: block;
         }
         .pub-cover-placeholder {
             width: 100%; height: 100%; min-height: 145px;
@@ -265,6 +271,18 @@
             font-size: 0.82rem; color: #9ca3af;
             font-style: italic; margin-bottom: 0.55rem;
         }
+        .pub-links {
+            display: flex; gap: 0.7rem; margin-top: 0.4rem; flex-wrap: wrap;
+        }
+        .pub-links a {
+            display: inline-flex; align-items: center; gap: 0.3rem;
+            font-size: 0.8rem; font-weight: 500;
+            padding: 0.28rem 0.7rem;
+            border-radius: 6px; border: 1px solid #d1d5db;
+            color: #374151; transition: all 0.25s;
+        }
+        .pub-links a:hover { background: #2563eb; color: #fff; border-color: #2563eb; }
+        .pub-links a i { font-size: 0.78rem; }
         .pub-badge {
             display: inline-block; padding: 0.2rem 0.75rem;
             border-radius: 999px; font-size: 0.72rem;
@@ -273,6 +291,22 @@
         }
         .badge-review { background: #fef3c7; color: #92400e; }
         .badge-soon { background: #e0e7ff; color: #3730a3; }
+
+        /* ========== Awards ========== */
+        .awards-list { list-style: none; }
+        .award-item {
+            display: flex; align-items: baseline; gap: 0.75rem;
+            padding: 0.7rem 0;
+            border-bottom: 1px solid #e5e7eb;
+            font-size: 0.98rem;
+        }
+        .award-item:last-child { border-bottom: none; }
+        .award-item::before {
+            content: '\f005'; font-family: 'Font Awesome 6 Free';
+            font-weight: 900; font-size: 0.72rem;
+            color: #f59e0b; flex-shrink: 0;
+        }
+        .award-detail { color: #6b7280; font-size: 0.88rem; }
 
         /* ========== Footer ========== */
         footer {
@@ -294,22 +328,22 @@
 
         /* ========== Responsive ========== */
         @media (max-width: 768px) {
-            .hero { min-height: 100vh; }
+            .hero { height: auto; min-height: 55vh; padding: 4rem 0 2rem; }
             .hero-content {
                 flex-direction: column; align-items: center;
                 text-align: center; padding: 0 1rem;
             }
             .profile-photo {
-                width: 170px; height: 210px;
+                width: 140px; height: 175px;
                 border-radius: 10px;
             }
             .hero-card {
                 margin-left: 0; margin-top: -18px;
                 border-radius: 0 0 16px 16px;
-                padding: 2rem 1.5rem;
+                padding: 1.4rem 1.2rem;
                 text-align: center;
             }
-            .hero-card h1 { font-size: 1.8rem; }
+            .hero-card h1 { font-size: 1.5rem; }
             .hero-icons { justify-content: center; }
             .photo-caption { font-size: 0.7rem; right: 1rem; bottom: 0.8rem; }
             .nav-links {
@@ -337,9 +371,9 @@
         }
 
         @media (max-width: 480px) {
-            .hero-card h1 { font-size: 1.5rem; }
-            .hero-card .hero-subtitle { font-size: 0.9rem; }
-            .profile-photo { width: 140px; height: 175px; }
+            .hero-card h1 { font-size: 1.3rem; }
+            .hero-card .hero-subtitle { font-size: 0.85rem; }
+            .profile-photo { width: 120px; height: 150px; }
         }
     </style>
 </head>
@@ -353,6 +387,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#news">News</a></li>
                 <li><a href="#publications">Selected Publications</a></li>
+                <li><a href="#awards">Awards</a></li>
                 <li><a href="assets/CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
             </ul>
         </div>
@@ -363,7 +398,9 @@
 
     <!-- ====== Hero Section ====== -->
     <section class="hero" id="home">
-        <div class="hero-bg" id="heroBg"></div>
+        <div class="hero-bg" id="heroBg">
+            <img src="assets/background.jpeg" alt="" id="heroBgImg">
+        </div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <img src="assets/profile.png" alt="AO Yuzhuo" class="profile-photo" loading="eager">
@@ -400,14 +437,18 @@
                     Hi, I am a third-year BSc student in
                     <a href="https://dsct.hkust.edu.hk/" target="_blank" rel="noopener noreferrer">Data Science and Technology +AI</a>
                     at <a href="https://hkust.edu.hk/" target="_blank" rel="noopener noreferrer">The Hong Kong University of Science and Technology (HKUST)</a>.
+                    Currently I am an exchange student at
+                    <a href="https://www.epfl.ch/en/" target="_blank" rel="noopener noreferrer">&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne (EPFL)</a>!
                 </p>
                 <p>
                     My research interests are centered on <strong>machine learning</strong> and <strong>computer vision</strong>,
-                    with a particular focus on unified modeling of 2D and 3D and human-like understanding of the real world.
-                    My most recent work has been concentrated on 3D vision. I have been fortunate to work with
+                    with a particular focus on modeling and human-like understanding of the real world.
+                    My most recent work has been concentrated on 3D vision and 3D generation. I have been fortunate to work with
                     <a href="https://cse.hkust.edu.hk/~cktang/bio.html" target="_blank" rel="noopener noreferrer">Prof. Chi-Keung Tang</a> and
                     <a href="https://yuwingtai.github.io/" target="_blank" rel="noopener noreferrer">Prof. Yu-Wing Tai</a>
-                    on computer vision.
+                    on computer vision. I am also fortunate to collaborate with
+                    <a href="https://shangzhewu.github.io/" target="_blank" rel="noopener noreferrer">Prof. Shangzhe Wu</a>
+                    on controllable 3D generation!
                 </p>
                 <p>Feel free to reach out for potential collaborations or discussions!</p>
             </div>
@@ -425,8 +466,8 @@
                     <span class="news-text">Summer Exchange Program at <a href="https://www.ntu.edu.sg/" target="_blank" rel="noopener noreferrer">Nanyang Technological University (NTU)</a>.</span>
                 </li>
                 <li class="news-item">
-                    <span class="news-date">2025 Fall</span>
-                    <span class="news-text">Looking forward to the exchange program at <a href="https://www.epfl.ch/en/" target="_blank" rel="noopener noreferrer">École Polytechnique Fédérale de Lausanne (EPFL)</a>!</span>
+                    <span class="news-date">2026 Spring</span>
+                    <span class="news-text">Exchange at <a href="https://www.epfl.ch/en/" target="_blank" rel="noopener noreferrer">École Polytechnique Fédérale de Lausanne (EPFL)</a>!</span>
                 </li>
             </ul>
         </div>
@@ -438,42 +479,51 @@
             <h2 class="section-title">Selected Publications</h2>
             <div class="section-divider"></div>
 
-            <!-- ReasonNav -->
+            <!-- SK-Adapter -->
             <div class="pub-card">
                 <div class="pub-cover">
-                    <img src="assets/Papers/ReasonNavi/global_reasoning.png" alt="ReasonNav" loading="lazy">
+                    <img src="assets/Papers/SK-Adapter/teaser.png" alt="SK-Adapter" loading="lazy">
                 </div>
                 <div class="pub-info">
-                    <div class="pub-title">ReasonNav: Human-Inspired Global Map Reasoning for Zero-Shot Embodied Navigation</div>
-                    <div class="pub-authors"><strong>Yuzhuo Ao*</strong>, Anbang Wang*, Yu-Wing Tai, Chi-Keung Tang</div>
+                    <div class="pub-title">SK-Adapter: Skeleton-Based Structural Control for Native 3D Generation</div>
+                    <div class="pub-authors">Anbang Wang*, <strong>Yuzhuo Ao*</strong>, Shangzhe Wu, Chi-Keung Tang</div>
                     <div class="pub-note">* Equal contribution</div>
                     <span class="pub-badge badge-review">Under Review</span>
                 </div>
             </div>
 
-            <!-- SK-Adapter -->
+            <!-- ReasonNavi -->
             <div class="pub-card">
                 <div class="pub-cover">
-                    <div class="pub-cover-placeholder">Coming Soon</div>
+                    <img src="assets/Papers/ReasonNavi/global_reasoning.png" alt="ReasonNavi" loading="lazy">
                 </div>
                 <div class="pub-info">
-                    <div class="pub-title">SK-Adapter</div>
-                    <div class="pub-authors">Details to be updated</div>
-                    <span class="pub-badge badge-soon">Coming Soon</span>
-                </div>
-            </div>
-
-            <!-- XToM -->
-            <div class="pub-card">
-                <div class="pub-cover">
-                    <div class="pub-cover-placeholder" style="background: linear-gradient(135deg, #0ea5e9, #6366f1);">XToM</div>
-                </div>
-                <div class="pub-info">
-                    <div class="pub-title">XToM: Exploring the Multilingual Theory of Mind for Large Language Models</div>
-                    <div class="pub-authors">Chunkit Chan, Yauwai Yim, Hongchuan Zeng, Zhiying Zou, Xinyuan Cheng, Zhifan Sun, Zheye Deng, Kawai Chung, <strong>Yuzhuo Ao</strong>, Yixiang Fan, Cheng Jiayang, Ercong Nie, Ginny Y. Wong, Helmut Schmid, Hinrich Sch&uuml;tze, Simon See, Yangqiu Song</div>
+                    <div class="pub-title">ReasonNavi: Human-Inspired Global Map Reasoning for Zero-Shot Embodied Navigation</div>
+                    <div class="pub-authors"><strong>Yuzhuo Ao*</strong>, Anbang Wang*, Yu-Wing Tai, Chi-Keung Tang</div>
+                    <div class="pub-note">* Equal contribution</div>
                     <span class="pub-badge badge-review">Under Review</span>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2602.15864" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i>Paper</a>
+                        <a href="https://reasonnavi.github.io/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i>Project</a>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- ====== Awards ====== -->
+    <section class="section section-alt" id="awards">
+        <div class="section-inner fade-up">
+            <h2 class="section-title">Awards</h2>
+            <div class="section-divider"></div>
+            <ul class="awards-list">
+                <li class="award-item">
+                    S. S. Chern Class Scholarship <span class="award-detail">&mdash; for top math students in HKUST</span>
+                </li>
+                <li class="award-item">
+                    Dean's List <span class="award-detail">&mdash; 2025 Spring, 2024 Spring, 2023 Fall</span>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -487,19 +537,42 @@
     (function () {
         'use strict';
 
-        /* --- Parallax --- */
-        var heroBg = document.getElementById('heroBg');
-        var hero   = document.querySelector('.hero');
-        var ticking = false;
+        /* --- Random background horizontal offset --- */
+        var heroBgImg = document.getElementById('heroBgImg');
+        var heroBg    = document.getElementById('heroBg');
+        var hero      = document.querySelector('.hero');
+        var ticking   = false;
+
+        function positionBg() {
+            var img = heroBgImg;
+            if (!img.naturalWidth) return;
+            var containerW = heroBg.offsetWidth;
+            var containerH = heroBg.offsetHeight;
+            /* rendered width when height is matched */
+            var renderedW = img.naturalWidth * (containerH / img.naturalHeight);
+            if (renderedW <= containerW) {
+                /* image is narrower than container — just center it */
+                img.style.left = '0px';
+                img.style.width = '100%';
+                img.style.height = 'auto';
+                return;
+            }
+            var maxOffset = renderedW - containerW;   /* extra pixels */
+            var randomLeft = -Math.floor(Math.random() * maxOffset);
+            img.style.left = randomLeft + 'px';
+        }
+        heroBgImg.addEventListener('load', positionBg);
+        if (heroBgImg.complete) positionBg();
+        window.addEventListener('resize', positionBg);
 
         function onScroll() {
             if (!ticking) {
                 window.requestAnimationFrame(function () {
                     var scrolled = window.pageYOffset;
 
-                    /* parallax: background moves at 35 % of scroll speed */
+                    /* parallax: background image moves at 35 % of scroll speed */
                     if (scrolled <= hero.offsetHeight && window.innerWidth > 768) {
-                        heroBg.style.transform = 'translateY(' + scrolled * 0.35 + 'px)';
+                        heroBgImg.style.transform = 'translateY(' + scrolled * 0.35 + 'px)';
                     }
 
                     /* navbar solid on scroll */
