@@ -99,10 +99,9 @@
             overflow: hidden;
         }
         .hero-bg img {
-            position: absolute; top: 0;
-            height: 100%;
-            width: auto; min-width: 100%;
-            object-fit: cover;
+            position: absolute; left: 0;
+            width: 100%;
+            height: auto;
         }
         .hero-overlay {
             position: absolute; inset: 0;
@@ -537,7 +536,7 @@
     (function () {
         'use strict';
 
-        /* --- Random background horizontal offset --- */
+        /* --- Random background vertical offset --- */
         var heroBgImg = document.getElementById('heroBgImg');
         var heroBg    = document.getElementById('heroBg');
         var hero      = document.querySelector('.hero');
@@ -548,18 +547,16 @@
             if (!img.naturalWidth) return;
             var containerW = heroBg.offsetWidth;
             var containerH = heroBg.offsetHeight;
-            /* rendered width when height is matched */
-            var renderedW = img.naturalWidth * (containerH / img.naturalHeight);
-            if (renderedW <= containerW) {
-                /* image is narrower than container — just center it */
-                img.style.left = '0px';
-                img.style.width = '100%';
-                img.style.height = 'auto';
+            /* width fills container; compute rendered height */
+            var renderedH = img.naturalHeight * (containerW / img.naturalWidth);
+            if (renderedH <= containerH) {
+                /* image shorter than container — just pin to top */
+                img.style.top = '0px';
                 return;
             }
-            var maxOffset = renderedW - containerW;   /* extra pixels */
-            var randomLeft = -Math.floor(Math.random() * maxOffset);
-            img.style.left = randomLeft + 'px';
+            var maxOffset = renderedH - containerH;   /* extra vertical pixels */
+            var randomTop = -Math.floor(Math.random() * maxOffset);
+            img.style.top = randomTop + 'px';
         }
         heroBgImg.addEventListener('load', positionBg);
         if (heroBgImg.complete) positionBg();
