@@ -97,6 +97,7 @@
             will-change: transform;
             z-index: 0;
             overflow: hidden;
+            cursor: zoom-in;
         }
         .hero-bg img {
             position: absolute; left: 0;
@@ -309,6 +310,27 @@
             color: #9ca3af; font-size: 0.82rem;
             border-top: 1px solid #f0f0f0;
             letter-spacing: 0.01em;
+        }
+
+        /* ========== Lightbox ========== */
+        .bg-lightbox {
+            position: fixed; inset: 0; z-index: 9999;
+            background: rgba(0, 0, 0, 0.88);
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; pointer-events: none;
+            transition: opacity 0.35s ease;
+            cursor: zoom-out;
+        }
+        .bg-lightbox.active { opacity: 1; pointer-events: auto; }
+        .bg-lightbox img {
+            max-width: 94vw; max-height: 92vh;
+            object-fit: contain; border-radius: 6px;
+            box-shadow: 0 12px 60px rgba(0, 0, 0, 0.5);
+        }
+        .bg-lightbox-hint {
+            position: absolute; bottom: 1.5rem; left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255,255,255,0.5); font-size: 0.82rem;
         }
 
         /* ========== Animations ========== */
@@ -564,6 +586,12 @@
         </div>
     </section>
 
+    <!-- ====== Background Lightbox ====== -->
+    <div class="bg-lightbox" id="bgLightbox">
+        <img src="assets/background.jpeg" alt="Background full view">
+        <span class="bg-lightbox-hint">Click anywhere to close</span>
+    </div>
+
     <!-- ====== Footer ====== -->
     <footer>
         <p>&copy; 2026 AO Yuzhuo &middot; All rights reserved. &middot; Last updated: 03/2026</p>
@@ -640,6 +668,25 @@
         }
         window.addEventListener('scroll', onScroll, { passive: true });
 
+
+        /* --- Background lightbox (desktop only) --- */
+        var bgLightbox = document.getElementById('bgLightbox');
+        heroBg.addEventListener('click', function (e) {
+            if (window.innerWidth <= 768) return;
+            e.stopPropagation();
+            bgLightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+        bgLightbox.addEventListener('click', function () {
+            bgLightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && bgLightbox.classList.contains('active')) {
+                bgLightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
 
         /* --- Mobile nav toggle --- */
         var navToggle  = document.getElementById('navToggle');
