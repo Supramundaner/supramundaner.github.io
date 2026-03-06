@@ -317,23 +317,41 @@
 
         /* ========== Responsive ========== */
         @media (max-width: 768px) {
-            .hero { height: auto; min-height: 55vh; padding: 4rem 0 2rem; }
+            /* Hero: show full background image, content overlaid centred */
+            .hero {
+                display: block; height: auto; min-height: 0; padding: 0; position: relative;
+            }
+            .hero-bg {
+                position: relative; top: 0; height: auto; overflow: visible; width: 100%;
+            }
+            .hero-bg img {
+                position: static !important; top: auto !important;
+                transform: none !important;
+                width: 100%; height: auto; display: block;
+            }
+            .hero-overlay {
+                position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%;
+            }
             .hero-content {
-                flex-direction: column; align-items: center;
-                text-align: center; padding: 0 1rem;
+                position: absolute; top: 50%; left: 50%;
+                transform: translate(-50%, -50%);
+                width: 92%; z-index: 2;
+                display: flex; flex-direction: column; align-items: center;
+                text-align: center;
             }
             .profile-photo {
-                width: 140px; height: 175px;
-                border-radius: 10px;
+                width: 130px; height: 163px; border-radius: 10px;
             }
             .hero-card {
-                margin-left: 0; margin-top: -18px;
-                border-radius: 0 0 16px 16px;
-                padding: 1.4rem 1.2rem;
+                margin-left: 0; margin-top: -14px;
+                border-radius: 0 0 14px 14px;
+                padding: 1.2rem 1.2rem;
                 text-align: center;
+                width: 100%;
             }
             .hero-card h1 { font-size: 1.5rem; }
             .hero-icons { justify-content: center; }
+            .scroll-hint { display: none; }
             .photo-caption { font-size: 0.7rem; right: 1rem; bottom: 0.8rem; }
             .nav-links {
                 display: none; flex-direction: column;
