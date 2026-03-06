@@ -345,12 +345,16 @@
             .hero-card {
                 margin-left: 0; margin-top: -14px;
                 border-radius: 0 0 14px 14px;
-                padding: 1.2rem 1.2rem;
+                padding: 0.8rem 1rem;
                 text-align: center;
-                width: 100%;
+                width: auto;
+                min-width: 260px;
             }
-            .hero-card h1 { font-size: 1.5rem; }
-            .hero-icons { justify-content: center; }
+            .hero-card h1 { font-size: 1.3rem; margin-bottom: 0.2rem; }
+            .hero-card .hero-subtitle { font-size: 0.82rem; line-height: 1.55; }
+            .hero-icons { justify-content: center; gap: 1rem; margin-top: 0.8rem; }
+            .hero-icons a { font-size: 0.65rem; }
+            .hero-icons a i { font-size: 1.2rem; margin-bottom: 0.2rem; }
             .scroll-hint { display: none; }
             .photo-caption { font-size: 0.7rem; right: 1rem; bottom: 0.8rem; }
             .nav-links {
@@ -378,9 +382,10 @@
         }
 
         @media (max-width: 480px) {
-            .hero-card h1 { font-size: 1.3rem; }
-            .hero-card .hero-subtitle { font-size: 0.85rem; }
-            .profile-photo { width: 120px; height: 150px; }
+            .hero-card h1 { font-size: 1.15rem; }
+            .hero-card .hero-subtitle { font-size: 0.78rem; }
+            .hero-card { padding: 0.6rem 0.8rem; }
+            .profile-photo { width: 100px; height: 125px; }
         }
     </style>
 </head>
