@@ -1,0 +1,56 @@
+[
+  {
+    "year": "2026",
+    "title": "SK-Adapter: Skeleton-Based Structural Control for Native 3D Generation",
+    "cover": {
+      "src": "assets/Papers/SK-Adapter/teaser.png",
+      "alt": "SK-Adapter"
+    },
+    "links": [
+      {
+        "label": "Paper",
+        "href": "https://arxiv.org/abs/2603.14152",
+        "icon": "fas fa-file-pdf"
+      },
+      {
+        "label": "Project",
+        "href": "https://sk-adapter.github.io/",
+        "icon": "fas fa-globe"
+      }
+    ],
+    "authors": [
+      { "name": "Anbang Wang", "suffix": "*" },
+      { "name": "Yuzhuo Ao", "suffix": "*", "highlight": true },
+      { "name": "Shangzhe Wu" },
+      { "name": "Chi-Keung Tang" }
+    ],
+    "note": "* Equal contribution."
+  },
+  {
+    "year": "2025",
+    "title": "ReasonNavi: Human-Inspired Global Map Reasoning for Zero-Shot Embodied Navigation",
+    "cover": {
+      "src": "assets/Papers/ReasonNavi/global_reasoning.png",
+      "alt": "ReasonNavi"
+    },
+    "links": [
+      {
+        "label": "Paper",
+        "href": "https://arxiv.org/abs/2602.15864",
+        "icon": "fas fa-file-pdf"
+      },
+      {
+        "label": "Project",
+        "href": "https://reasonnavi.github.io/",
+        "icon": "fas fa-globe"
+      }
+    ],
+    "authors": [
+      { "name": "Yuzhuo Ao", "suffix": "*", "highlight": true },
+      { "name": "Anbang Wang", "suffix": "*" },
+      { "name": "Yu-Wing Tai" },
+      { "name": "Chi-Keung Tang" }
+    ],
+    "note": "* Equal contribution."
+  }
+]

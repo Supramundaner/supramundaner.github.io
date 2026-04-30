@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuzhuo Ao</title>
+    <meta name="description" content="Yuzhuo Ao's academic homepage">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <!-- ====== Navigation ====== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="assets/CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+            </ul>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+
+    <!-- ====== Hero Section ====== -->
+    <section class="hero" id="home">
+        <div class="hero-bg" id="heroBg">
+            <img src="assets/background.jpeg" alt="" id="heroBgImg">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-shadow"></div>
+        <div class="hero-content">
+            <img src="assets/profile.png" alt="Yuzhuo Ao" class="profile-photo" loading="eager">
+            <div class="hero-card">
+                <h1>Yuzhuo Ao</h1>
+                <p class="hero-subtitle hero-subtitle-full">
+                    BSc Student in Data Science and Technology<br>
+                    The Hong Kong University of Science and Technology
+                </p>
+                <p class="hero-subtitle hero-subtitle-short">
+                    Bsc Student in Data Science, HKUST
+                </p>
+                <div class="hero-icons">
+                    <a href="mailto:yaoaa@connect.ust.hk" aria-label="Email">
+                        <i class="fas fa-envelope"></i>Email
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=94vDURoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+                        <i class="fas fa-graduation-cap"></i>Scholar
+                    </a>
+                    <a href="https://github.com/Supramundaner" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/yuzhuo-ao-911a39294" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>LinkedIn
+                    </a>
+                    <a href="assets/CV.pdf" target="_blank" rel="noopener noreferrer" aria-label="CV" class="hero-cv-link">
+                        <i class="fas fa-file-alt"></i>CV
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="photo-caption">Photo taken by me in Interlaken, Switzerland.</div>
+        <span class="hero-expand-hint">Click anywhere to close</span>
+        <div class="scroll-hint"><i class="fas fa-chevron-down"></i></div>
+    </section>
+
+    <!-- Shadow transition between background and text (desktop only) -->
+    <div class="hero-shadow"></div>
+
+    <!-- ====== About ====== -->
+    <section class="section" id="about">
+        <div class="section-inner fade-up">
+            <h2 class="section-title">About Me</h2>
+            <div class="section-divider"></div>
+            <div class="about-text">
+                <p>
+                    Hi, I am Yuzhuo Ao (敖宇卓), a third-year BSc student in
+                    <a href="https://dsct.hkust.edu.hk/" target="_blank" rel="noopener noreferrer">Data Science and Technology +AI</a>
+                    at <a href="https://hkust.edu.hk/" target="_blank" rel="noopener noreferrer">The Hong Kong University of Science and Technology (HKUST)</a>.
+                    Currently I am an exchange student at
+                    <a href="https://www.epfl.ch/en/" target="_blank" rel="noopener noreferrer">&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne (EPFL)</a>.
+                    My research interests are centered on machine learning and computer vision,
+                    with a particular focus on systems for <strong>real-world modeling, representation and interaction</strong>.
+                </p>    
+                <p>    
+                    I have been fortunate to work with
+                    <a href="https://cse.hkust.edu.hk/~cktang/bio.html" target="_blank" rel="noopener noreferrer">Prof. Chi-Keung Tang</a> and
+                    <a href="https://yuwingtai.github.io/" target="_blank" rel="noopener noreferrer">Prof. Yu-Wing Tai</a>
+                    on computer vision. I am also fortunate to collaborate with
+                    <a href="https://elliottwu.com/" target="_blank" rel="noopener noreferrer">Prof. Shangzhe Wu</a>
+                    on controllable 3D generation.
+                </p>
+                <p>Feel free to reach out for potential collaborations or discussions!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== News ====== -->
+    <section class="section section-alt" id="news">
+        <div class="section-inner fade-up">
+            <h2 class="section-title">News</h2>
+            <div class="section-divider"></div>
+            <div class="news-window">
+                <ul class="news-list" id="newsList">
+                    <li class="news-item">
+                        <span class="news-date">2026 / 03</span>
+                        <span class="news-text">Our Paper <a href="https://arxiv.org/abs/2603.14152" target="_blank" rel="noopener noreferrer">SK-Adapter</a> is available on Arxiv!</span>
+                    </li>
+                    <li class="news-item">
+                        <span class="news-date">2026 / 02</span>
+                        <span class="news-text">Exchange at <a href="https://www.epfl.ch/en/" target="_blank" rel="noopener noreferrer">École Polytechnique Fédérale de Lausanne (EPFL)</a>.</span>
+                    </li>
+                    <li class="news-item">
+                        <span class="news-date">2026 / 02</span>
+                        <span class="news-text">Our Paper <a href="https://arxiv.org/abs/2602.15864" target="_blank" rel="noopener noreferrer">ReasonNavi</a> is available on Arxiv!</span>
+                    </li>
+                    <li class="news-item">
+                        <span class="news-date">2025 / 06</span>
+                        <span class="news-text">Summer Exchange Program at <a href="https://www.ntu.edu.sg/" target="_blank" rel="noopener noreferrer">Nanyang Technological University (NTU)</a>.</span>
+                    </li>
+                </ul>
+                <div class="news-scrollbar" id="newsScrollbar" aria-hidden="true">
+                    <div class="news-scrollbar-thumb" id="newsScrollbarThumb"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== Publications ====== -->
+    <section class="section" id="publications">
+        <div class="section-inner fade-up">
+            <h2 class="section-title">Publications</h2>
+            <div class="section-divider"></div>
+            <div id="publicationsList" class="publications-list" aria-live="polite"></div>
+        </div>
+    </section>
+
+    <!-- ====== Awards ====== -->
+    <section class="section section-alt" id="awards">
+        <div class="section-inner fade-up">
+            <h2 class="section-title">Awards</h2>
+            <div class="section-divider"></div>
+            <ul class="awards-list">
+                <li class="award-item">
+                    S. S. Chern Class Scholarship <span class="award-detail">&mdash; for top math students in HKUST</span>
+                </li>
+                <li class="award-item">
+                    Dean's List <span class="award-detail">&mdash; 2025 Fall, 2025 Spring, 2024 Spring, 2023 Fall</span>
+                </li>
+                <li class="award-item">
+                    University's Scholarship Scheme for Continuing Undergraduate Students <span class="award-detail">&mdash; 2025 Fall, 2024 Fall</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ====== Footer ====== -->
+    <footer>
+        <p>&copy; 2026 Yuzhuo Ao &middot; All rights reserved. &middot; Last updated: 03/2026</p>
+    </footer>
+    <!-- ====== Scripts ====== -->
+    <script src="scripts.js" defer></script>
+</body>
+</html>
