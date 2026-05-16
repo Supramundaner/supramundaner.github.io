@@ -29,11 +29,21 @@
             var cover = document.createElement('div');
             cover.className = 'pub-cover';
 
+            var picture = document.createElement('picture');
+            if (publication.cover.webp) {
+                var source = document.createElement('source');
+                source.srcset = publication.cover.webp;
+                source.type = 'image/webp';
+                picture.appendChild(source);
+            }
+
             var image = document.createElement('img');
             image.src = publication.cover.src;
             image.alt = publication.cover.alt || publication.title;
             image.loading = 'lazy';
-            cover.appendChild(image);
+            image.decoding = 'async';
+            picture.appendChild(image);
+            cover.appendChild(picture);
 
             var info = document.createElement('div');
             info.className = 'pub-info';

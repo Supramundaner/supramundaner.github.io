@@ -6,6 +6,8 @@
     <title>Yuzhuo Ao</title>
     <meta name="description" content="Yuzhuo Ao's academic homepage">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="preload" as="image" href="assets/background.webp" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="assets/profile.webp" type="image/webp" fetchpriority="high">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -33,12 +35,18 @@
     <!-- ====== Hero Section ====== -->
     <section class="hero" id="home">
         <div class="hero-bg" id="heroBg">
-            <img src="assets/background.jpeg" alt="" id="heroBgImg">
+            <picture>
+                <source srcset="assets/background.webp" type="image/webp">
+                <img src="assets/background.jpeg" alt="" id="heroBgImg" fetchpriority="high" decoding="async">
+            </picture>
         </div>
         <div class="hero-overlay"></div>
         <div class="hero-shadow"></div>
         <div class="hero-content">
-            <img src="assets/profile.png" alt="Yuzhuo Ao" class="profile-photo" loading="eager">
+            <picture class="profile-photo-wrap">
+                <source srcset="assets/profile.webp" type="image/webp">
+                <img src="assets/profile.png" alt="Yuzhuo Ao" class="profile-photo" width="600" height="652" loading="eager" fetchpriority="high" decoding="async">
+            </picture>
             <div class="hero-card">
                 <h1>Yuzhuo Ao</h1>
                 <p class="hero-subtitle hero-subtitle-full">

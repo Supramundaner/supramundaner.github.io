@@ -4,6 +4,7 @@
     "title": "SK-Adapter: Skeleton-Based Structural Control for Native 3D Generation",
     "cover": {
       "src": "assets/Papers/SK-Adapter/teaser.png",
+      "webp": "assets/Papers/SK-Adapter/teaser.webp",
       "alt": "SK-Adapter"
     },
     "links": [
@@ -31,6 +32,7 @@
     "title": "ReasonNavi: Human-Inspired Global Map Reasoning for Zero-Shot Embodied Navigation",
     "cover": {
       "src": "assets/Papers/ReasonNavi/global_reasoning.png",
+      "webp": "assets/Papers/ReasonNavi/global_reasoning.webp",
       "alt": "ReasonNavi"
     },
     "links": [
