@@ -582,8 +582,8 @@
             .hero {
                 display: flex;
                 height: auto;
-                min-height: 86svh;
-                padding: 3.1rem 1.15rem 2.6rem;
+                min-height: 0;
+                padding: 3.1rem 1.15rem 1.8rem;
                 position: relative;
                 overflow: hidden;
                 align-items: flex-start;
@@ -796,8 +796,8 @@
         }
         @media (max-width: 480px) {
             .hero {
-                min-height: 78svh;
-                padding: 2.75rem 1rem 2.3rem;
+                min-height: 0;
+                padding: 2.75rem 1rem 1.55rem;
             }
             .profile-photo-wrap { margin-bottom: clamp(1.45rem, 4.6vh, 2.6rem); }
             .hero-card h1 { margin-bottom: 0.64rem; }
