@@ -1,6 +1,9 @@
 ﻿    (function () {
         'use strict';
 
+        var allPublications = [];
+        var showAllPublications = false;
+
         function createIcon(className) {
             var icon = document.createElement('i');
             icon.className = className;
@@ -86,8 +89,7 @@
 
             if (publication.note) {
                 var note = document.createElement('div');
-                note.className = 'pub-meta-row';
-                note.appendChild(createIcon('fas fa-bookmark'));
+                note.className = 'pub-meta-row pub-note';
 
                 var emphasis = document.createElement('em');
                 emphasis.textContent = publication.note;
@@ -100,12 +102,34 @@
             return card;
         }
 
-        function renderPublications(publications) {
+        function getVisiblePublications() {
+            if (showAllPublications) return allPublications;
+            return allPublications.filter(function (publication) {
+                return publication.selected !== false;
+            });
+        }
+
+        function updatePublicationToggle() {
+            var toggle = document.getElementById('publicationToggle');
+            if (!toggle) return;
+
+            var hasHiddenPublications = allPublications.some(function (publication) {
+                return publication.selected === false;
+            });
+
+            toggle.hidden = !hasHiddenPublications;
+            toggle.textContent = showAllPublications ? 'Show selected' : 'Show all';
+            toggle.setAttribute('aria-pressed', String(showAllPublications));
+        }
+
+        function renderPublications() {
             var container = document.getElementById('publicationsList');
             if (!container) return;
 
             var fragment = document.createDocumentFragment();
             var currentYear = '';
+            var publications = getVisiblePublications();
+
             publications.forEach(function (publication) {
                 if (publication.year !== currentYear) {
                     var year = document.createElement('div');
@@ -125,6 +149,17 @@
             });
 
             container.replaceChildren(fragment);
+            updatePublicationToggle();
+        }
+
+        function setupPublicationToggle() {
+            var toggle = document.getElementById('publicationToggle');
+            if (!toggle) return;
+
+            toggle.addEventListener('click', function () {
+                showAllPublications = !showAllPublications;
+                renderPublications();
+            });
         }
 
         function loadPublications() {
@@ -133,7 +168,10 @@
                     if (!response.ok) throw new Error('Unable to load publications.json');
                     return response.json();
                 })
-                .then(renderPublications)
+                .then(function (publications) {
+                    allPublications = publications;
+                    renderPublications();
+                })
                 .catch(function () {
                     var container = document.getElementById('publicationsList');
                     if (container) {
@@ -142,6 +180,7 @@
                 });
         }
 
+        setupPublicationToggle();
         loadPublications();
 
         function setupNewsScrollbar() {

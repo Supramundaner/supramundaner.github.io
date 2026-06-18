@@ -2,6 +2,8 @@
   {
     "year": "2026",
     "title": "SK-Adapter: Skeleton-Based Structural Control for Native 3D Generation",
+    "selected": true,
+    "venueTag": "ECCV 2026",
     "cover": {
       "src": "assets/Papers/SK-Adapter/teaser.png",
       "webp": "assets/Papers/SK-Adapter/teaser.webp",
@@ -30,6 +32,7 @@
   {
     "year": "2025",
     "title": "ReasonNavi: Human-Inspired Global Map Reasoning for Zero-Shot Embodied Navigation",
+    "selected": true,
     "cover": {
       "src": "assets/Papers/ReasonNavi/global_reasoning.png",
       "webp": "assets/Papers/ReasonNavi/global_reasoning.webp",
@@ -54,5 +57,47 @@
       { "name": "Chi-Keung Tang" }
     ],
     "note": "* Equal contribution."
+  },
+  {
+    "year": "2025",
+    "title": "XToM: Exploring the Multilingual Theory of Mind for Large Language Models",
+    "selected": false,
+    "venueTag": "ACL 2026",
+    "cover": {
+      "src": "assets/Papers/XToM/teaser.png",
+      "webp": "assets/Papers/XToM/teaser.webp",
+      "alt": "XToM"
+    },
+    "links": [
+      {
+        "label": "Paper",
+        "href": "https://arxiv.org/abs/2506.02461",
+        "icon": "fas fa-file-pdf"
+      },
+      {
+        "label": "Code",
+        "href": "https://github.com/HKUST-KnowComp/XToM",
+        "icon": "fab fa-github"
+      }
+    ],
+    "authors": [
+      { "name": "Chunkit Chan" },
+      { "name": "Yauwai Yim" },
+      { "name": "Hongchuan Zeng" },
+      { "name": "Zhiying Zou" },
+      { "name": "Xinyuan Cheng" },
+      { "name": "Zhifan Sun" },
+      { "name": "Zheye Deng" },
+      { "name": "Kawai Chung" },
+      { "name": "Yuzhuo Ao", "highlight": true },
+      { "name": "Yixiang Fan" },
+      { "name": "Cheng Jiayang" },
+      { "name": "Ercong Nie" },
+      { "name": "Ginny Y. Wong" },
+      { "name": "Helmut Schmid" },
+      { "name": "Hinrich Schütze" },
+      { "name": "Simon See" },
+      { "name": "Yangqiu Song" }
+    ]
   }
 ]

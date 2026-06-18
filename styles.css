@@ -333,6 +333,75 @@
         }
 
         /* ========== Publications ========== */
+        .pub-controls {
+            display: flex;
+            justify-content: flex-end;
+            margin: -0.1rem 0 0.45rem;
+        }
+        .pub-toggle-button {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 154px;
+            min-height: 28px;
+            padding: 0 0 0 54px;
+            border: 0;
+            background: transparent;
+            color: #1f2937;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 0.86rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: none;
+            text-align: left;
+            white-space: nowrap;
+        }
+        .pub-toggle-button::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 44px;
+            height: 26px;
+            border: 0;
+            border-radius: 999px;
+            background: #e5e5ea;
+            transform: translateY(-50%);
+            transition: background 0.22s ease, box-shadow 0.22s ease;
+        }
+        .pub-toggle-button::after {
+            content: '';
+            position: absolute;
+            left: 3px;
+            top: 50%;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.22), 0 0 1px rgba(0, 0, 0, 0.20);
+            transform: translateY(-50%);
+            transition: transform 0.24s cubic-bezier(0.28, 1.28, 0.42, 1), box-shadow 0.22s ease;
+        }
+        .pub-toggle-button:hover::before {
+            box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+        }
+        .pub-toggle-button:hover::after {
+            box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.20);
+        }
+        .pub-toggle-button[aria-pressed="true"]::before {
+            background: #007aff;
+        }
+        .pub-toggle-button[aria-pressed="true"]::after {
+            transform: translate(18px, -50%);
+        }
+        .pub-toggle-button:focus-visible {
+            outline: 2px solid rgba(37, 99, 235, 0.55);
+            outline-offset: 2px;
+        }
+        .pub-toggle-button[hidden] {
+            display: none;
+        }
         .pub-year {
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 1.5rem; font-weight: 700;
