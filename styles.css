@@ -8,6 +8,29 @@
             overflow-x: hidden;
             background: #fff;
             font-variant-numeric: lining-nums tabular-nums;
+            -webkit-font-feature-settings: "lnum" 1, "tnum" 1;
+            font-feature-settings: "lnum" 1, "tnum" 1;
+        }
+        button, input, textarea, select {
+            font-family: inherit;
+            font-variant-numeric: lining-nums tabular-nums;
+            -webkit-font-feature-settings: "lnum" 1, "tnum" 1;
+            font-feature-settings: "lnum" 1, "tnum" 1;
+        }
+        .nav-links a,
+        .hero-card,
+        .photo-caption,
+        .about-text,
+        .news-date,
+        .news-text,
+        .pub-year,
+        .pub-title,
+        .pub-links a,
+        .pub-meta-row,
+        .award-item,
+        footer {
+            font-variant-numeric: lining-nums tabular-nums;
+            -webkit-font-feature-settings: "lnum" 1, "tnum" 1;
             font-feature-settings: "lnum" 1, "tnum" 1;
         }
         a { color: #2563eb; text-decoration: none; transition: color 0.3s; }
@@ -780,6 +803,23 @@
             .nav-toggle { display: flex; }
             .nav-toggle span,
             .navbar.scrolled .nav-toggle span { background: #374151; }
+
+            .hero::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 5.5rem;
+                z-index: 1;
+                pointer-events: none;
+                background: linear-gradient(
+                    to bottom,
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(255, 255, 255, 0.72) 62%,
+                    #fff 100%
+                );
+            }
 
             .pub-card { flex-direction: column; align-items: stretch; min-height: 0; height: auto; }
             .pub-cover { width: 100%; height: auto; aspect-ratio: 16 / 9; }
