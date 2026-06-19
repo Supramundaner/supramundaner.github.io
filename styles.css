@@ -602,6 +602,18 @@
 
 /* ========== Responsive (Fixed) ========== */
         @media (max-width: 768px) {
+            body {
+                font-family: 'Times New Roman', Georgia, Times, serif;
+                -webkit-text-size-adjust: 100%;
+                text-size-adjust: 100%;
+            }
+            .hero-card h1,
+            .section-title,
+            .pub-year,
+            .pub-title {
+                font-family: 'Times New Roman', Georgia, Times, serif;
+            }
+
             .hero {
                 display: flex;
                 height: auto;
